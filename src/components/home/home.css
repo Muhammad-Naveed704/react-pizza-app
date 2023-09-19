@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* headerrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.mainHeading {
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+}
+.mainHeading h1 {
+  font-size: 3rem;
+  color: rgb(214, 214, 52);
+  font-weight: 600;
+  /* margin-top: 1rem; */
+}
+
+.ourmenu {
+  display: flex;
+  justify-content: center;
+}
+.ourmenu h1 {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(222, 136, 31);
+}
+.para {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  /* width: 20px; */
+  height: auto;
+  width: 95%;
+  margin-top: 1rem;
+}
+.para p {
+  font-size: 1.3rem;
+  color: rgb(222, 136, 31);
+}
+
+/* menu------------------------------ */
+
+/* searching area */
+.searchingComp {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 4rem;
+  align-items: center;
+}
+.searchInput {
+  padding-left: 3rem;
+  width: 20rem;
+  border: none;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 1px 1px 2px 2px brown;
+  text-transform: capitalize;
+}
+.searchInput:hover {
+  color: brown;
+  cursor: pointer;
+  border: none;
+}
+.searchBtn {
+  width: 120px;
+  height: 2rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  border: navajowhite;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  background: transparent;
+  box-shadow: 1px 2px 4px 3px brown;
+}
+.searchBtn:hover {
+  color: brown;
+  cursor: pointer;
+  box-shadow: 2px 2px 1px 1px black;
+}
+/* mainCardContainer area */
+.mainCardContainer {
+  display: flex;
+  background: lightgoldenrodyellow;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* single cards area  */
+.card {
+  width: 300px;
+  height: 250px;
+  border: 2px solid lightgray;
+  margin: 10px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px -8px 16px 3px rgba(36, 18, 36, 0.31);
+  -moz-box-shadow: -5px -8px 16px 3px rgba(36, 18, 36, 0.31);
+  box-shadow: -5px -8px 16px 3px rgba(36, 18, 36, 0.31);
+}
+.cardRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85%;
+  width: auto;
+  margin-left: 0.3rem;
+}
+.cardRight img {
+  width: 140px;
+  height: 170px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+.cardRight button {
+  width: 140px;
+  border: none;
+  background: brown;
+  cursor: pointer;
+  height: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-transform: capitalize;
+  color: white;
+}
+.cardRight button:hover {
+  color: black;
+}
+.cardinfo {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 1rem;
+  width: auto;
+  padding: 1rem;
+}
+.recipePublisher {
+  color: brown;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 100%px;
+}
+.recipeTitle {
+  width: 100%;
+  text-align: start;
+  font-size: 0.9rem;
+  /* color: blue; */
+}
+.recipePric {
+  color: blue;
+  cursor: pointer;
+}
+.recipePric span {
+  color: red;
+}
+/* fooooooooooooooooter */
+.footer {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  width: 99%;
+  height: auto;
+  /* margin-left: 7rem; */
+}
+.footer h5 {
+  width: 90%;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: brown;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .mainCardContainer {
+    width: 98%;
+  }
+  .mainHeading h1 {
+    font-size: 16px !important;
+  }
+  .ourmenu h1 {
+    font-size: 16px !important;
+  }
+  .para p {
+    font-size: 16px !important;
+  }
+  .searchInput {
+    width: 9rem;
+    display: inline-block;
+    font-size: 12px !important;
+    text-align: left !important;
+    padding: 3px;
+  }
+  .searchInput::placeholder {
+    font-size: 12px !important;
+  }
+  .searchBtn {
+    width: 5rem;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 95%;
+  }
+  .footer h5 {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainCardContainer {
+    width: 90%;
+  }
+}
